@@ -1,6 +1,19 @@
-# MicroServicio
+# Dockerfile para Microservicio
 
-Este repositorio contiene un ejemplo de Dockerfile para crear una imagen Docker llamada "02_angelo_microservicio". La imagen se construye a partir de Alpine Linux 3.18 e incluye Python y la herramienta `curl`. Además, se clona un repositorio de ejemplo llamado "MicroServicio" desde GitHub en una carpeta dentro del contenedor.
+<!-- Encabezado -->
+<h1 align="center">Dockerfile para Microservicio</h1>
+
+<!-- Advertencia con Imagen -->
+<p align="center">
+  <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Docker.svg" alt="Docker" width="100">
+</p>
+
+<p align="center"><strong>¡Importante!</strong> No es necesario realizar un <code>git clone</code> de este repositorio. El Dockerfile se encarga de la clonación automática. Simplemente sigue las instrucciones una vez que hayas descargado el Dockerfile.</p>
+
+<!-- Descripción -->
+## Descripción
+
+> Este Dockerfile se utiliza para construir una imagen de Docker que ejecuta un servicio basado en el sistema operativo Alpine 3.18. La imagen se configura con Python, curl y clona un repositorio de GitHub llamado "MicroServicio" en una carpeta dentro del contenedor.
 
 ## Instrucciones de Uso
 
