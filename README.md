@@ -4,7 +4,7 @@ Este repositorio contiene un ejemplo de Dockerfile para crear una imagen Docker 
 
 ## Instrucciones de Uso
 
-### Construir la Imagen Docker
+Antes de comenzar, asegúrate de haber descargado el Dockerfile desde la rama "Dockerfile" del repositorio principal utilizando la siguiente URL: [Descargar Dockerfile](https://github.com/AngeloLaMadrid/MicroServicio/tree/Dockerfile).
 
 Para construir la imagen Docker, sigue estos pasos:
 
