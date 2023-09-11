@@ -1,10 +1,11 @@
+# Nota: En algunos comandos uso --no-cache para evitar el almacenamiento en la caché lo que ayuda a mantener el tamaño de la imagen más pequeño
 # Utiliza la imagen base Alpine 3.18
 FROM alpine:3.18
 
-# Etiqueta para el autor o mantenedor del Dockerfile
+# Etiqueta del Dockerfile
 LABEL maintainer="02_AngeloLaMadrid"
 
-# Actualiza el sistema e instala Python y curl
+# Actualizar el sistema e instala Python y curl
 RUN apk update && apk add --no-cache python3 curl
 
 # Crea una carpeta llamada "Microservicio" en el escritorio
