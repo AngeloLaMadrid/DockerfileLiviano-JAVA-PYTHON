@@ -28,7 +28,7 @@ Para construir la imagen Docker, sigue estos pasos:
 3. Ejecuta el siguiente comando para construir la imagen:
 
    ```bash
-   docker build -t 02_angelo_microservicio .
+   docker build -t 02_angelo_microservicio_java .
    
 4. Utiliza este comando para crear y ejecutar el contenedor basado en la imagen:
 
