@@ -1,0 +1,20 @@
+# Utiliza la imagen base Alpine con OpenJDK 11
+FROM alpine:3.14
+
+# Etiqueta del Dockerfile
+LABEL maintainer="02_AngeloLaMadrid_JAVA"
+
+# Actualizar el sistema e instala curl y OpenJDK 11
+RUN apk update && apk add --no-cache curl openjdk11-jre-headless
+
+# Crea una carpeta llamada "Microservicio" en el escritorio
+RUN mkdir -p /root/Desktop/Microservicio
+
+# Clona el repositorio de GitHub desde la rama "java" en la carpeta "Microservicio"
+RUN apk add --no-cache git && git clone -b java --single-branch https://github.com/AngeloLaMadrid/MicroServicio.git /root/Desktop/Microservicio
+
+# Establece el directorio de trabajo dentro de la imagen
+WORKDIR /root/Desktop/Microservicio
+
+# Comando predeterminado para ejecutar cuando se inicia el contenedor
+CMD ["java", "-jar", "microservicio_java.jar"]
