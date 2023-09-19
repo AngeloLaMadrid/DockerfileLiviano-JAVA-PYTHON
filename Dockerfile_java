@@ -1,18 +1,18 @@
-# Utiliza la imagen base Alpine con OpenJDK 11 y cURL
+# Utiliza la imagen base Alpine con OpenJDK
 FROM alpine:3.14
 
 # Etiqueta del Dockerfile
 LABEL maintainer="02_AngeloLaMadrid_JAVA"
 
-# Actualiza el sistema e instala OpenJDK 11 y cURL
+# Actualiza el sistema e instala OpenJDK 11 y curl
 RUN apk update && apk add --no-cache openjdk11-jre curl
 
-# Establece el directorio de trabajo dentro de la imagen (puedes ajustarlo según tus necesidades)
+# Establece el directorio para el .jar
 WORKDIR /app
 
-# Clona solo el archivo microservicio_java.jar desde la rama "java" del repositorio GitHub
+# Clonar solo el archivo microservicio_java.jar desde mi rama "java"
 RUN apk add --no-cache git && \
     curl -LJO https://github.com/AngeloLaMadrid/MicroServicio/raw/java/microservicio_java.jar
 
-# Comando predeterminado para ejecutar el archivo .jar (debes montar el archivo .jar cuando ejecutes el contenedor)
+# Comando para ejecutar el archivo .jar 
 CMD ["java", "-jar", "microservicio_java.jar"]
