@@ -21,16 +21,15 @@ RUN jlink \
     --no-man-pages \
     --output "$JAVA_MINIMAL"
 
-# Segunda etapa, agrega solo nuestra distribución mínima de "JRE" y curl
+# Segunda etapa, poner lo minimo para ejecutar el .jar y agregar el curl
 FROM alpine
-
 ENV JAVA_MINIMAL=/opt/jre
 ENV PATH="$PATH:$JAVA_MINIMAL/bin"
 
 # Instala curl
 RUN apk --no-cache add curl
 
-# Establece el directorio para el .jar
+# Directorio para el .jar
 WORKDIR /app
 
 # Clona solo el archivo microservicio_java.jar desde mi rama "java"
