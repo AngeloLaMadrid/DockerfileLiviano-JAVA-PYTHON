@@ -1,4 +1,4 @@
-<h1 align="center">RETO MS -200MB
+<h1 align="center">RETO MS -200MB (Completado con un peso de 26MB aprox.)
 </h1>
 <!-- Encabezado -->
 <h1 align="center">Dockerfile para Microservicio</h1>
