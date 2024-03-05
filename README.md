@@ -1,5 +1,5 @@
-# Dockerfile para Microservicio
-
+<h1 align="center">RETO MS -200MB
+</h1>
 <!-- Encabezado -->
 <h1 align="center">Dockerfile para Microservicio</h1>
 
@@ -13,9 +13,26 @@
 <!-- Descripción -->
 ## Descripción
 
-Este Dockerfile se utiliza para construir una imagen de Docker que ejecuta un servicio basado en el sistema operativo Alpine 3.18. La imagen se configura con Python, curl y clona un repositorio de GitHub llamado "MicroServicio" en una carpeta dentro del contenedor.
+🚀 Como parte de un desafío, se me encomendó la tarea de construir un microservicio que pesara menos de 200 MB, y puedo afirmar que he superado este reto logrando una imagen de Docker de tan solo 26 MB aproximadamente.
 
-## Instrucciones de Uso
+🐳 Este Dockerfile está diseñado para crear una imagen de Docker que ejecute un servicio en el sistema operativo Alpine 3.18, la configuración de la imagen incluye Python 🐍 o Java ☕️ (según el archivo descargado), así como también curl, además, realiza la clonación automatica a una de mis ramas dentro del contenedor, con el fin de ahorrar pasos extras para el usuario.
+
+✨ Esta tarea se ha completado con éxito y el resultado es un microservicio extremadamente ligero y eficiente.
+
+## 📁 Contenido
+
+El repositorio contiene los siguientes archivos:
+
+- `Dockerfile`: Archivo Dockerfile para construir la imagen
+- `requirements.txt`: Dependencias de Python necesarias
+- `Angelo-Microservicio.py`: Código fuente del microservicio en Python
+
+## 🛠 Requisitos
+
+- Docker
+- Python o Java (Dependiendo del archivo)
+
+## 💻 Instrucciones de Uso
 
 Antes de comenzar, asegúrate de haber descargado el Dockerfile desde la rama "Dockerfile" del repositorio principal utilizando la siguiente URL: [Descargar Dockerfile](https://github.com/AngeloLaMadrid/MicroServicio/tree/Dockerfile).
 
@@ -39,3 +56,16 @@ Para construir la imagen Docker, sigue estos pasos:
    
    ```bash
    curl http://localhost:8080
+
+## 📥 Clonar el repositorio
+
+```bash
+git clone https://github.com/AngeloLaMadrid/MicroServicio.git
+```
+
+## ✨ Importancia
+
+Este repositorio sirve como ejemplo de cómo dockerizar un microservicio sencillo en Python.
+
+## 📝 Licencia
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
