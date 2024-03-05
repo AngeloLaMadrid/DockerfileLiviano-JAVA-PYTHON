@@ -13,9 +13,9 @@
 <!-- Descripción -->
 ## Descripción
 
-🚀 Como parte de un desafío, se me encomendó la tarea de construir un microservicio que pesara menos de 200 MB, y puedo afirmar que he superado este reto logrando una imagen de Docker de tan solo 26 MB aproximadamente.
+🚀 Como parte de un desafío, se me encomendó la tarea de `construir un microservicio que pesara menos de 200 MB`, y puedo afirmar que he superado este reto logrando una imagen de Docker de tan solo `26 MB` aproximadamente.
 
-🐳 Este Dockerfile está diseñado para crear una imagen de Docker que ejecute un servicio en el sistema operativo Alpine 3.18, la configuración de la imagen incluye Python 🐍 o Java ☕️ (según el archivo descargado), así como también curl, además, realiza la clonación automatica a una de mis ramas dentro del contenedor, con el fin de ahorrar pasos extras para el usuario.
+🐳 Este Dockerfile está diseñado para crear una imagen de Docker que ejecute un servicio en el sistema operativo `Alpine 3.18`, la configuración de la imagen incluye `Python` 🐍 o `Java` ☕️ (según el archivo descargado), así como también `curl`, además, realiza la clonación automatica a una de mis ramas dentro del contenedor, con el fin de ahorrar pasos extras para el usuario.
 
 ✨ Esta tarea se ha completado con éxito y el resultado es un microservicio extremadamente ligero y eficiente.
 
@@ -29,8 +29,8 @@ El repositorio contiene los siguientes archivos:
 
 ## 🛠 Requisitos
 
-- Docker
-- Python o Java (Dependiendo del archivo)
+- `Docker`
+- `Python` o `Java` (Dependiendo del archivo)
 
 ## 💻 Instrucciones de Uso
 
