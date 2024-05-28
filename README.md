@@ -65,7 +65,7 @@ git clone https://github.com/AngeloLaMadrid/MicroServicio.git
 
 ## ✨ Importancia
 
-Este repositorio sirve como ejemplo de cómo dockerizar un microservicio sencillo en Python.
+Este repositorio sirve como ejemplo de cómo dockerizar un microservicio sencillo en Python/Java.
 
 ## 📝 Licencia
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
