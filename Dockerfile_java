@@ -10,9 +10,6 @@ RUN apk update && apk add --no-cache openjdk11-jre curl
 # Establece el directorio para el .jar
 WORKDIR /app
 
-# Fix java test angelo
-ENV JAVA_HOME=/opt/jre
-
 # Clonar solo el archivo microservicio_java.jar desde mi rama "java"
 RUN apk add --no-cache git && \
     curl -LJO https://github.com/AngeloLaMadrid/MicroServicio/raw/java/microservicio_java.jar
