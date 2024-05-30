@@ -1,0 +1,40 @@
+# Etapa de construccion
+FROM eclipse-temurin:17-jdk-alpine as packager
+
+# Construir distribucion mínima de modulos
+RUN jlink \
+    --verbose \
+    --add-modules java.base,java.sql,java.naming,java.management,java.instrument,java.desktop \
+    --compress 2 \
+    --strip-debug \
+    --no-header-files \
+    --no-man-pages \
+    --output /opt/jre
+
+# Segunda etapa, configurar entorno minimo
+FROM alpine:latest
+
+# Instalar dependencias necesarias para ejecutar Java
+RUN apk add --no-cache libc6-compat
+
+# Copiar JRE personalizado desde la etapa de construcción
+COPY --from=packager /opt/jre /opt/jre
+
+# Configuracion del entorno y del PATH
+ENV JAVA_HOME=/opt/jre
+ENV PATH=$PATH:$JAVA_HOME/bin
+
+# Directorio de trabajo para el JAR
+WORKDIR /app
+
+# Copiar el JAR
+COPY backend-old.jar .
+
+# Exponer el puerto 8090
+EXPOSE 8090
+
+# Comando de inicio, IMPORTANTE renombrar el jar si tiene otro nombre
+CMD ["java", "-jar", "backend-old.jar"]
+
+#docker build -t angelolm/backend-old .
+#docker run -d --name contenedor-back-ms-user -p 8090:8090 angelolm/backend-old
