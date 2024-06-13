@@ -27,14 +27,17 @@ ENV PATH=$PATH:$JAVA_HOME/bin
 # Directorio de trabajo para el JAR
 WORKDIR /app
 
-# Copiar el JAR
+# Copiar el JAR ***
 COPY backend-old.jar .
 
 # Exponer el puerto 8090
 EXPOSE 8090
 
-# Comando de inicio, IMPORTANTE renombrar el jar si tiene otro nombre
+# Comando de inicio, IMPORTANTE renombrar el jar si tiene otro nombre ***
 CMD ["java", "-jar", "backend-old.jar"]
 
 #docker build -t angelolm/backend-old .
 #docker run -d --name contenedor-back-ms-user -p 8090:8090 angelolm/backend-old
+
+#IMPORTANTE, DEBEN CAMBIAR AL NOMBRE DE SU ARCHIVO JAR EN LAS LINEAS 31 Y 37
+#EN ESTE EJEMPLO YO ESTOY USANDO "backend-old.jar"
