@@ -8,7 +8,7 @@ Este repositorio contiene 3 ejemplos de Dockerfile para crear una imagen Docker 
 - **Dockerfile_javaSpringBootLiviano**: Para aplicaciones en Java con Spring Boot.
 - **Dockerfile_Angular**: Para aplicaciones en Angular.
 
-> **¡Importante!** Para el archivo `Dockerfile_java`, borrar el `_java` y debe quedar tal que así `Dockerfile`.
+> **¡Importante!** Dentro del Dockerfile cambiar `nombre_de_tu_imagen`, por el suyo, ejemplo: `angelo/ms-users`.
 
 ## Comandos para construir y ejecutar imágenes Docker 🐳
 
