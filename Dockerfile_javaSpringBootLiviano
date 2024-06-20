@@ -2,9 +2,9 @@
 # Repositorio: AngeloLaMadrid/DockerfileLiviano-JAVA-PYTHON-ANGULAR
 
 # Instrucciones-----------------------------------------------------------------
-# En este EJEMPLO tengo mi jar con el nombre "backend-old.jar" de puerto 8090 (cambiarlos al suyo)
-# Se tiene que cambiar por el nombre de su IMAGEN en las lineas: 43 y 49
-# Se tiene que cambiar el PUERTO al suyo en la linea: 46
+# En este EJEMPLO tengo mi jar con el nombre "backend-old.jar" de puerto 8090 (cambiarlos al suyo), deben hacer los pasos:
+# 1.-Cambiar por el nombre de su IMAGEN en las lineas: 43 y 49
+# 2.-Cambiar el PUERTO al suyo en la linea: 46
 
 # Etapa de construccion
 FROM eclipse-temurin:17-jdk-alpine as packager
