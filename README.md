@@ -29,7 +29,7 @@ docker build -t nombre_de_tu_imagen -f Dockerfile_javaSpringBootLiviano .
 docker build -t nombre_de_tu_imagen -f Dockerfile_Angular .
 ```
 
-#### Correr el contenedor Docker (cambiar el puerto si es necesario):
+### 2. Correr el contenedor Docker (cambiar el puerto si es necesario):
 ```sh
 docker run -d -p 8080:8080 nombre_de_tu_imagen
 ```
