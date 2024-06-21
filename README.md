@@ -4,10 +4,11 @@ Este repositorio contiene 3 ejemplos de Dockerfile para crear una imagen Docker 
 
 ## Dockerfiles disponibles 📄
 
-- **Dockerfile_python**: Para aplicaciones en Python.
-- **Dockerfile_javaSpringBootLiviano**: Para aplicaciones en Java con Spring Boot.
-- **Dockerfile_Angular**: Para aplicaciones en Angular.
+- ```Dockerfile_python```: Para aplicaciones en Python.
+- ```Dockerfile_javaSpringBootLiviano```: Para aplicaciones en Java con Spring Boot.
+- ```Dockerfile_Angular```: Para aplicaciones en Angular.
 
+> [!IMPORTANT]
 > **¡Importante!** Dentro del Dockerfile cambiar `nombre_de_tu_imagen`, por el suyo, ejemplo: `angelo/ms-users`.
 
 ## Comandos para construir y ejecutar imágenes Docker 🐳
@@ -17,6 +18,7 @@ Este repositorio contiene 3 ejemplos de Dockerfile para crear una imagen Docker 
 #### Python:
 ```sh
 docker build -t nombre_de_tu_imagen -f Dockerfile_python .
+
 ```
 
 #### SpringBoot:
@@ -33,3 +35,9 @@ docker build -t nombre_de_tu_imagen -f Dockerfile_Angular .
 ```sh
 docker run -d -p 8080:8080 nombre_de_tu_imagen
 ```
+<details>
+  <summary>One more quick hack? 🎭</summary>
+  
+  → Easy  
+  → And simple
+</details>
