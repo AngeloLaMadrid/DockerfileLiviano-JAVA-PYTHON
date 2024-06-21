@@ -36,8 +36,13 @@ docker build -t nombre_de_tu_imagen -f Dockerfile_Angular .
 docker run -d -p 8080:8080 nombre_de_tu_imagen
 ```
 <details>
-  <summary>One more quick hack? 🎭</summary>
+  <summary>?? 🎭</summary>
+
+
   
-  → Easy  
-  → And simple
+  → [1](https://external-preview.redd.it/hinnvNAwQBNfQDHTHSHe7lRszARKpXn1TlBooCuKGqw.jpg?auto=webp&s=81ad9f44795c81f009c88910c5555cb8b14a31e0)?
+  
+  → [2](https://i.pinimg.com/originals/b9/61/ee/b961ee14c3e0933086b54a3007720a42.jpg)?
+
+  → [3](https://www.youtube.com/watch?v=xvFZjo5PgG0)?
 </details>
