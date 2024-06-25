@@ -3,8 +3,8 @@
 
 # Instrucciones-----------------------------------------------------------------
 # En este EJEMPLO tengo mi jar con el nombre "backend-old.jar" de puerto 8090 (cambiarlos al suyo), deben hacer los pasos:
-# 1.-Cambiar por el nombre de su IMAGEN en las lineas: 43 y 49
-# 2.-Cambiar el PUERTO al suyo en la linea: 46
+# 1.-Cambiar por el nombre de su JAR en las lineas: 39 y 45
+# 2.-Cambiar el PUERTO al suyo en la linea: 42
 
 # Etapa de construccion
 FROM eclipse-temurin:17-jdk-alpine as packager
